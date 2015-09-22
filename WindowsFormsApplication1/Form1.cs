@@ -190,6 +190,8 @@ namespace WindowsFormsApplication1
         Environment.CurrentDirectory = (Properties.Settings.Default.Title);
             //сохраняем
             bmpScreenshot.Save(fullpath, ImageFormat.Jpeg);
+            bmpScreenshot.Dispose();
+            gfxScreenshot.Dispose();
         }
 
         private void сохранитьНастройкиToolStripMenuItem_Click(object sender, EventArgs e)
